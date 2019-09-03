@@ -1,5 +1,5 @@
 > 知识点
-## mapGetters和mapMutaions的传餐方式
+### mapGetters和mapMutaions的传餐方式
 ```bash
   # store中
   const store = new Vuex.Store({
@@ -34,6 +34,25 @@
     }
   })
 ```
+
+### mutations-types.js
+```bash
+# mutations-types.js
+export const SET_COUNT = 'set_count'
+export const SET_VALUE = 'set_value'
+
+# mutations.js`
+import {SET_COUNT, VALUE} from './mutations-types.js'
+export default {
+  [SET_COUNT]: (state, count) => {
+    state.count = count
+  },
+  [SET_VALUE]: (state, value) => {
+    state.value = value
+  }
+}
+```
+
 # vue
 
 > A Vue.js project
