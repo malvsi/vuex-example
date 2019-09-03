@@ -15,7 +15,13 @@ export default {
   },
   methods: {
     listShowHandle () {
-      this.$store.commit('setIsShow', !this.$store.getters.getIsShow)
+      // 第一种方式
+      // this.$store.commit('setIsShow', !this.$store.getters.getIsShow)
+      // 第二种方式
+      this.$store.commit({
+        type: 'setIsShow',
+        flag: !this.$store.getters.getIsShow
+      })
     }
   }
 }

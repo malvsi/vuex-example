@@ -34,17 +34,25 @@ export default new Vuex.Store({
   state: {
     titleList: listData,
     isShow: false,
-    value: ''
+    value: '',
+    todos: [
+      {id: 1, done: true},
+      {id: 2, done: false}
+    ]
   },
   mutations: {
-    setIsShow (state, flag) {
-      state.isShow = flag
+    setIsShow (state, obj) {
+      state.isShow = obj.flag
     },
     setValue (state, val) {
       state.value = val
     }
   },
   getters: {
+    getTodoById: (state) => (id) => {
+      return state.todos.find((todo) => todo.id === id)
+    },
+    getTodo: (state) => state.todos[1],
     getTitleList (state) {
       return state.titleList
     },

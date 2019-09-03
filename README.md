@@ -1,3 +1,39 @@
+> 知识点
+# mapGetters和mapMutaions的传餐方式
+```bash
+  # store中
+  const store = new Vuex.Store({
+    state: {
+      flag: false
+    },
+    mutations: {
+      changeFlag (state, obj) {
+        state.flag = obj.flag
+      }
+    }
+  })
+
+  # html
+  <div id="app">
+    <input type="button" value="change" @click="changeHandle"/>
+    <p>{{ $store.state.flag }}</p>
+  </div>
+
+  # javascript
+  import { mapMutations } from 'vuex'
+  new Vue({
+    el: '#app',
+    data: {
+      flag: false
+    },
+    methods: {
+      ...mapMutations('changeFlag'),
+      changeHandle () {
+        this.changeFlag({flag: true})
+      }
+    }
+  })
+```
 # vue
 
 > A Vue.js project
