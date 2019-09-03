@@ -54,5 +54,8 @@ export default new Vuex.Store({
     getValue (state) {
       return state.value
     }
+  },
+  actions: {
+  
   }
 })
