@@ -1,5 +1,5 @@
 > 知识点
-# mapGetters和mapMutaions的传餐方式
+## mapGetters和mapMutaions的传餐方式
 ```bash
   # store中
   const store = new Vuex.Store({
