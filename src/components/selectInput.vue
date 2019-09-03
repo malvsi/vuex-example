@@ -19,7 +19,7 @@ export default {
       // this.$store.commit('setIsShow', !this.$store.getters.getIsShow)
       // 第二种方式
       this.$store.commit({
-        type: 'setIsShow',
+        type: 'set_is_show',
         flag: !this.$store.getters.getIsShow
       })
     }

@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     getTitleHandle (title) {
-      this.$store.commit('setValue', title)
+      this.$store.commit('set_value', title)
     }
   }
 }
