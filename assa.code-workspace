@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "/Users/malvsi/Desktop/code/妙味vue/vue-router"
+		},
+		{
+			"path": "/Users/malvsi/Desktop/code/妙味vue/vue-router-example"
+		},
+		{
+			"path": "/Users/malvsi/Desktop/code/妙味vue/vuex-exampl"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
